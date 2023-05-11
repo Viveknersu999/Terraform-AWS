@@ -1,7 +1,7 @@
 resource "aws_instance" "ec2_instance" {
     ami = "ami-076b75d50e423acfe"
     instance_type = "t2.micro"
-    key_name = "ec2-jenkins.pem"
+    key_name = "ec2-jenkins"
   connection {
     type = "ssh"
     user = "ec2-user"
