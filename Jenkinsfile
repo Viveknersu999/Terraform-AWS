@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/abidh123/mytestingrepo.git', branch: 'master'
+                git url: 'https://github.com/Viveknersu999/Terraform-AWS.git', branch: 'main'
             }
         }
         stage('Initialize') {
