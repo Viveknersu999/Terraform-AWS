@@ -1,7 +1,6 @@
-resource "aws_security_group" "TF_SG" {
-  name        = "security group using terraform"
+resource "aws_security_group" "tf_sg" {
+  name        = "tf_sg"
   description = "security group using terraform"
-  vpc_id      = vpc-09f16b1e36a0eac0d
 
   ingress {
     description      = "HTTP"
@@ -28,6 +27,6 @@ resource "aws_security_group" "TF_SG" {
   }
 
   tags = {
-    Name = "TF_SG"
+    Name = "tf_sg"
   }
 }
